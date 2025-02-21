@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>Document</title>
+ <style>
+    @keyframes animationfortext{
+        from{
+            transform: translate(300px);
+            color: purple;
+            /* background-color: greenyellow; */
+        }
+        to{
+            transform: translate(0px);
+            color: teal;
+            /* background-color: burlywood; */
+        }  
+    }
+    h1{
+        animation-name: animationfortext;
+        animation-duration: 3s;
+    }
+    button{
+        animation-name: animationfortext;
+        animation-duration: 2s;
+    }
+ </style>
+</head>
+<body>
+    <h1>Good Evening</h1>
+    <button>submit</button>
+</body>
+</html>

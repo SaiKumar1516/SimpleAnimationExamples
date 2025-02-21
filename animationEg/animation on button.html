@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Document</title>
+  <style>
+    *{
+        padding: 0px;
+        margin: 0px;
+    }
+    body{
+        background-color: black;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    /* @keyframes shake {
+        0%,50%,100%{
+            transform: translate(0px);
+        }
+        25%{
+            transform: translate(200px);
+        }
+        75%{
+            transform: translate(-200px);
+        } 
+    } */
+    @keyframes shake {
+        0%{
+            transform: translate(0px);
+        }
+        10%{
+            transform: translate(200px) rotate(45deg);
+        }
+       20%{
+            transform: translate(0px) rotate(0deg);
+        }
+        30%{
+            transform: translate(-200px) rotate(-45deg);
+        }
+        35%{
+            transform: translate(0px) ;
+        }
+        40%{
+            transform: translate(500px) rotate(180deg);
+        }
+        50%{
+            transform: translate(0px) rotate(0deg);
+        }
+        60%{
+            transform: translate(-500px) rotate(-180deg);
+        }
+        70%{
+            transform: translate(300px);
+        }
+        80%{
+            transform: translate(0px);
+        }
+        90%{
+            transform: translate(-300px);
+        }
+        100%{
+            transform: translate(0px);
+        }
+        
+    }
+    input{
+        width: 180px;
+        height: 60px;
+        font-size: 30px;
+        animation-name: shake;
+        animation-duration: 5s;
+    }
+
+  </style>
+</head>
+<body>
+   <input type="button" value="Login"> 
+</body>
+</html>

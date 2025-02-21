@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Document</title>
+  <style>
+    *{
+        padding: 0px;
+        margin: 0px;
+    }
+    body{
+        background-color: black;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    @keyframes shake {
+        0%,50%,100%{
+            transform: skew(0deg) rotate(0deg);
+            border: 3px solid lawngreen;
+        }
+        25%{
+            transform: skew(30deg) rotate(30deg);
+            border: 3px solid lawngreen;
+        }
+        75%{
+            transform:skew(-30deg) rotate(-30deg);
+            border: 3px solid lawngreen;
+        }
+    }
+    input{
+        background-image: linear-gradient(purple,red);
+        width: 100px;
+        height: 30px;
+        color: white;
+        letter-spacing: 2px;
+        font-size: 20px;
+        border-radius: 10px;
+        animation-name: shake;
+        animation-duration: 1s;
+    }
+  </style>
+</head>
+<body>
+    <input type="button" value="Login">
+</body>
+</html>

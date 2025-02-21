@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Document</title>
+  <style>
+    *{
+        padding: 0px;
+        margin: 0px;
+    }
+    @keyframes colorchange {
+        from{
+            background-position: 0%;
+        }
+        to{
+            background-position: 400%;
+        }
+        
+    }
+    #container{
+        width: 100%;
+        height: 150px;
+        background-image: linear-gradient(90deg,violet,indigo,blue,green,yellow,orange,red,red,orange,yellow,green,blue,indigo,violet);
+        background-size: 400%;
+        background-position: 400%;
+        animation-name: colorchange;
+        animation-duration: 10s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        
+    }
+  </style>
+</head>
+<body>
+   <div id="container"></div> 
+</body>
+</html>

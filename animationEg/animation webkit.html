@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Document</title>
+  <style>
+    *{
+        padding: 0px;
+        margin: 0px;
+    }
+    body{
+        height: 100vh;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    h1{
+        color: white;
+        font-size: 80px;
+        letter-spacing: 20px;
+        background-image: linear-gradient(90deg,orange,white,green,green,white,orange);
+        background-size: 400%;
+        background-position: 400%;
+        animation-name: textcolor;
+        animation-duration: 10s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip:text;
+    }
+    div{
+        width: 330px;
+        height: 10px;
+       background-image: linear-gradient(90deg,orange,white,green,green,white,orange);
+        background-size: 400%;
+        background-position: 400%;
+       animation-name:linecolor;
+       animation-duration: 10s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+    }
+    @keyframes textcolor {
+        from{
+            background-position: 0%;
+        }
+        to{
+            background-position: 400%;
+        }
+        
+    }
+    @keyframes linecolor {
+        from{
+            background-position: 0%;
+        }
+        to{
+            background-position: 400%;
+        }
+        
+    }
+  </style>
+</head>
+<body>
+    <h1>Indian
+        <div></div>
+    </h1>
+</body>
+</html>

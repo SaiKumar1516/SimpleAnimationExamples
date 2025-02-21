@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Document</title>
+   <style>
+    @keyframes slide {
+        from{
+                transform: translate(-300px);
+                filter: opacity(0);
+        }
+        to{
+            transform: translate(0px);
+            filter: opacity(1);
+        }
+    }
+    body{
+        display: flex;
+        height: 90vh;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    #a{
+        font-size: 80px;
+        animation-name: slide;
+        animation-duration: 0.5s;
+        animation-delay: 0.1s;
+        animation-timing-function: ease-in;
+        
+    }
+    #b{
+        font-size: 60px;
+        animation-name: slide;
+        animation-duration: 0.5s;
+        animation-delay: 0.2s;
+        animation-timing-function: linear;
+    }
+    #c{
+        font-size: 50px;
+        animation-name: slide;
+        animation-duration: 0.5s;
+        animation-delay: 0.3s;
+        animation-timing-function: ease-in-out;
+    }
+   </style>
+</head>
+<body>
+   <h1 id="a">This is Heading1</h1>
+   <h1 id="b">This is Heading2</h1>
+   <h1 id="c">This is Heading3</h1> 
+</body>
+</html>
